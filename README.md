@@ -64,7 +64,7 @@ curl http://localhost:8000/
 ```bash
 curl -X POST http://localhost:8000/reply \
   -H "Content-Type: application/json" \
-  -d '{"text": "야 이 시발놈아"}'
+  -d '{"text": "야 이 시O놈아"}'
 ```
 
 응답 (예시):
@@ -79,7 +79,7 @@ curl -X POST http://localhost:8000/reply \
 
 ## 📝 특징
 
-* **욕설 치환**: "시발" → "사과", "병신" → "바나나" 등
+* **욕설 치환**: "시O" → "사과", "병O" → "바나나" 등
 * **차별어 차단**: 특정 집단을 비하하는 단어가 들어가면 강제 톤다운
 * **밈 톤 유지**: 짧고 직설적인 커뮤니티 말투
 
@@ -109,5 +109,5 @@ MIT License
 
 ```
 python restore.py --text "사과 바나나 딸기 사과" --json
-# {"restored":"시발 병신 개새끼 시발","counts":{"시발":2,"병신":1,"개새끼":1}}
+# {"restored":"tlqkf 병ㅅ(검열) 개새(검열) 시(검열)","counts":{"시O":2,"병O":1,"개새O":1}}
 ```
