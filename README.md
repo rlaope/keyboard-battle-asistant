@@ -95,3 +95,16 @@ curl -X POST http://localhost:8000/reply \
 ## 📄 라이선스
 
 MIT License
+
+
+<br>
+
+## Restore Results
+
+분석목적 검열된 문장을 다시 욕설로 변환함. 
+인공지능한테 욕설검열을 어디까지 우회할수있을까 실험
+
+```
+python restore.py --text "사과 바나나 딸기 사과" --json
+# {"restored":"시발 병신 개새끼 시발","counts":{"시발":2,"병신":1,"개새끼":1}}
+```
